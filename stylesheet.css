@@ -4,7 +4,7 @@
 }
 
 :root {
-font-family: Crimson-Pro, serif;
+    font-family: Crimson-Pro, serif;
 }
 
 body {
@@ -16,16 +16,20 @@ body {
 
 #leftSide {
     background-image: url(images/fallBackground.jpg);
+    min-width: 50vh;
     background-size: 100vh;
-    flex-grow: 0.3;
+    flex-grow: 0.6;
     min-height: 100vh;
 }
 
 #rightSide{
+    background-image:linear-gradient(#BFC8D1 15%, #c04b16);
+    font-size: 25px;
     display: flex;
-    text-align: center;
-    flex-grow: .7;
-    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: .3;
+    height: 100vh;
 }
 
 #titleHolder {
@@ -44,4 +48,68 @@ body {
     padding-right: 20px;
     height: 100px;
 
+}
+
+.text {
+    margin-left: 25px   ;
+    padding-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid;
+    margin: 25px;
+}
+
+.formTitle {
+    margin-left: 20px;
+    width: 100%;
+}
+
+div.input {
+    display: flex;
+    flex-direction: column;
+    min-width: 45%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 20px;
+}
+
+input {
+    margin-top: 4px;
+    padding: 5px;
+    color: white;
+    background-color: grey;
+    border: rgb(75, 75, 75);
+    border: solid;
+    border-radius: 4px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.63);
+}
+
+.submitButton {
+margin: 20px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 6px;
+    border-style: solid;
+}
+
+.forgotPassword {
+    margin-left: 25px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.75);
 }
